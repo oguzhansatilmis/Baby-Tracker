@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.mobilearts.nftworld.ui.onboarding.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_onboarding2Fragment"
+            app:destination="@id/onboarding2Fragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_inapp2Fragment"
+            app:destination="@id/inapp2Fragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding2Fragment"
+        android:name="com.mobilearts.nftworld.ui.onboarding.Onboarding2Fragment"
+        android:label="fragment_onboarding2"
+        tools:layout="@layout/fragment_onboarding2" >
+        <action
+            android:id="@+id/action_onboarding2Fragment_to_onboarding3Fragment"
+            app:destination="@id/onboarding3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding3Fragment"
+        android:name="com.mobilearts.nftworld.ui.onboarding.Onboarding3Fragment"
+        android:label="fragment_onboarding3"
+        tools:layout="@layout/fragment_onboarding3" >
+        <action
+            android:id="@+id/action_onboarding3Fragment_to_inapp2Fragment"
+            app:destination="@id/inapp2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mobilearts.nftworld.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_feedingFragment"
+            app:destination="@id/feedingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diaperFragment"
+            app:destination="@id/diaperFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sleepFragment"
+            app:destination="@id/sleepFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_calenderFragment"
+            app:destination="@id/calenderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settFragment"
+            app:destination="@id/settFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.mobilearts.nftworld.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaperFragment"
+        android:name="com.mobilearts.nftworld.ui.status.DiaperFragment"
+        android:label="fragment_diaper"
+        tools:layout="@layout/fragment_diaper" >
+        <action
+            android:id="@+id/action_diaperFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedingFragment"
+        android:name="com.mobilearts.nftworld.ui.status.FeedingFragment"
+        android:label="fragment_feeding"
+        tools:layout="@layout/fragment_feeding" >
+        <action
+            android:id="@+id/action_feedingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sleepFragment"
+        android:name="com.mobilearts.nftworld.ui.status.SleepFragment"
+        android:label="fragment_sleep"
+        tools:layout="@layout/fragment_sleep" >
+        <action
+            android:id="@+id/action_sleepFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="com.mobilearts.nftworld.ui.status.CalenderFragment"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" >
+        <action
+            android:id="@+id/action_calenderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inapp2Fragment"
+        android:name="com.mobilearts.nftworld.ui.InappFragment"
+        tools:layout="@layout/fragment_inapp2"
+        android:label="Inapp2Fragment" >
+        <action
+            android:id="@+id/action_inapp2Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settFragment"
+        android:name="com.mobilearts.nftworld.ui.SettingsFragment"
+        android:label="fragment_sett"
+        tools:layout="@layout/fragment_sett" >
+        <action
+            android:id="@+id/action_settFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

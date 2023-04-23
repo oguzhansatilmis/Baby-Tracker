@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_3"
+    tools:context=".view.ui.Onboarding3Fragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07109489" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9318735" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5293749" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Track Your Baby's"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textFontWeight="1000"
+        app:layout_constraintBottom_toBottomOf="@id/guideline81"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline81" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activities with Ease"
+        android:textSize="25dp"
+        android:textFontWeight="1000"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/guideline82"
+        app:layout_constraintEnd_toEndOf="@id/guideline80"
+        app:layout_constraintStart_toStartOf="@id/guideline79"
+        app:layout_constraintTop_toTopOf="@id/guideline82" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Share access to your baby's tracker with family members, babysitters, or healthcare providers "
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins"
+        android:textSize="17dp"
+        android:textFontWeight="1000"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline80"
+        app:layout_constraintStart_toStartOf="@id/guideline79"
+        app:layout_constraintTop_toTopOf="@id/guideline82"
+        app:layout_constraintBottom_toBottomOf="@id/guideline84"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@id/guideline79"
+        app:layout_constraintEnd_toEndOf="@id/guideline80"
+        app:layout_constraintTop_toTopOf="@id/guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slider3" />
+
+
+    <View
+        android:id="@+id/viewonboarding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Next"
+        android:background="@drawable/nextbutton"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/guideline79"
+        app:layout_constraintEnd_toEndOf="@id/guideline80"
+        app:layout_constraintTop_toTopOf="@id/guideline87"
+        app:layout_constraintBottom_toBottomOf="@id/guideline88"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/guideline79"
+        app:layout_constraintEnd_toEndOf="@id/guideline80"
+        app:layout_constraintTop_toTopOf="@id/guideline87"
+        app:layout_constraintBottom_toBottomOf="@id/guideline88"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/row"
+            android:text="adasdasdasd">
+
+        </ImageView>
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="@id/guideline118"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline118"
+            app:layout_constraintBottom_toBottomOf="@id/guideline118"
+            android:background="@drawable/line3"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/status_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Tue, 12 Feb"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textFontWeight="1000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline118"
+            app:layout_constraintStart_toEndOf="@id/imageView17"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline118"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/guideline118"
+            app:layout_constraintEnd_toEndOf="@id/guideline121"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_calender2" />
+
+        <ImageView
+            android:id="@+id/status_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/imageView17"
+            app:layout_constraintEnd_toEndOf="@id/guideline121"
+            app:layout_constraintTop_toTopOf="@id/guideline118"
+            app:srcCompat="@drawable/wet" />
+
+        <TextView
+            android:id="@+id/status_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#4625C3"
+            android:textFontWeight="1000"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintTop_toTopOf="@id/guideline118"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline121"
+            app:layout_constraintStart_toEndOf="@id/status_image_view"/>
+
+        <TextView
+            android:id="@+id/status_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#010101"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="1000"
+            app:layout_constraintTop_toTopOf="@id/guideline118"
+            app:layout_constraintStart_toStartOf="@id/guideline122"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline122" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.16" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.84" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

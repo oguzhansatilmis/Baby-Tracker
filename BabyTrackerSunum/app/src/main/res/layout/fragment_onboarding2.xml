@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    tools:context=".view.ui.Onboarding2Fragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5364759" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58698094" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65656567" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87205386" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9304153" />
+
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Next"
+        android:background="@drawable/nextbutton"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/guideline72"
+        app:layout_constraintEnd_toEndOf="@id/guideline73"
+        app:layout_constraintTop_toTopOf="@id/guideline77"
+        app:layout_constraintBottom_toBottomOf="@id/guideline78"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@id/guideline72"
+        app:layout_constraintEnd_toEndOf="@id/guideline73"
+        app:layout_constraintTop_toTopOf="@id/guideline76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slider2" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Learn About Your"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline65" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Baby"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline74"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline74" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Customize your baby's profile, set reminders for important activities, and view detailed reports on your baby's progress "
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins"
+        android:textSize="17dp"
+        android:textFontWeight="1000"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline73"
+        app:layout_constraintStart_toStartOf="@id/guideline72"
+        app:layout_constraintTop_toTopOf="@id/guideline74"
+        app:layout_constraintBottom_toBottomOf="@id/guideline76"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/guideline72"
+        app:layout_constraintEnd_toEndOf="@id/guideline73"
+        app:layout_constraintTop_toTopOf="@id/guideline77"
+        app:layout_constraintBottom_toBottomOf="@id/guideline78"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

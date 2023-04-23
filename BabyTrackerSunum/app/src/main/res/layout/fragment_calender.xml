@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.CalenderFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline113" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.049382716" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calendertext"
+        app:layout_constraintBottom_toBottomOf="@id/guideline96"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline96" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/guideline96"
+        app:layout_constraintStart_toStartOf="@id/guideline96"
+        app:layout_constraintTop_toTopOf="@id/guideline96" />
+
+    <TextView
+        android:id="@+id/date_Calander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Tue, Feb 12"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textFontWeight="1000"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@id/guideline96"
+        app:layout_constraintBottom_toBottomOf="@id/guideline144"
+        app:layout_constraintEnd_toEndOf="@id/imageView10"
+        app:layout_constraintStart_toStartOf="@id/imageView10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <ImageView
+        android:id="@+id/all_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/text_all_unselected"
+        app:layout_constraintBottom_toBottomOf="@id/guideline103"
+        app:layout_constraintEnd_toEndOf="@id/guideline109"
+        app:layout_constraintStart_toStartOf="@id/guideline109"
+        app:layout_constraintTop_toTopOf="@id/guideline103" />
+
+    <ImageView
+        android:id="@+id/feeding_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_feeding_unselected"
+        app:layout_constraintBottom_toBottomOf="@id/guideline103"
+        app:layout_constraintEnd_toEndOf="@id/guideline110"
+        app:layout_constraintStart_toStartOf="@id/guideline110"
+        app:layout_constraintTop_toTopOf="@id/guideline103" />
+
+    <ImageView
+        android:id="@+id/diaper_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_diaper_unselected"
+        app:layout_constraintBottom_toBottomOf="@id/guideline103"
+        app:layout_constraintEnd_toEndOf="@id/guideline111"
+        app:layout_constraintStart_toStartOf="@id/guideline111"
+        app:layout_constraintTop_toTopOf="@id/guideline103" />
+
+    <ImageView
+        android:id="@+id/sleep_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_sleep_unselected"
+        app:layout_constraintBottom_toBottomOf="@id/guideline103"
+        app:layout_constraintEnd_toEndOf="@id/guideline112"
+        app:layout_constraintStart_toStartOf="@id/guideline112"
+        app:layout_constraintTop_toTopOf="@id/guideline103" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline144"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.120089784" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

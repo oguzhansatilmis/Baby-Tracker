@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.SleepFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05607476635" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.945" />
+
+
+    <ImageView
+        android:id="@+id/sleep_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/guideline48"
+        app:layout_constraintStart_toStartOf="@id/guideline48"
+        app:layout_constraintTop_toTopOf="@id/guideline48" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="40.5dp"
+        android:text="Sleep"
+        android:textColor="#4625C3"
+        android:textFontWeight="1000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/guideline48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19977553" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2996633" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32996634" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <View
+        android:id="@+id/fell_sleep_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="@id/guideline52"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+        app:layout_constraintTop_toTopOf="@id/guideline51">
+
+    </View>
+    <View
+        android:id="@+id/wakeup_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="@id/guideline54"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+        app:layout_constraintTop_toTopOf="@id/guideline53">
+
+    </View>
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle11"
+        app:layout_constraintBottom_toBottomOf="@id/guideline56"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+        app:layout_constraintTop_toTopOf="@id/guideline55">
+
+    </View>
+    <TextView
+        android:id="@+id/fell_sleep_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Fell Sleep"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/edittextcolor"
+        app:layout_constraintBottom_toBottomOf="@id/fell_sleep_view"
+        app:layout_constraintTop_toTopOf="@id/fell_sleep_view"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+          />
+    <TextView
+        android:id="@+id/wakeup_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Woke Up"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/edittextcolor"
+        app:layout_constraintBottom_toBottomOf="@id/wakeup_view"
+        app:layout_constraintTop_toTopOf="@id/wakeup_view"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49" />
+    <EditText
+        android:id="@+id/sleep_note"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="start"
+        android:fontFamily="@font/poppins"
+        android:hint="Note"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/edittextcolor"
+        app:layout_constraintBottom_toBottomOf="@id/view10"
+        app:layout_constraintTop_toTopOf="@id/view10"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49" />
+
+    <View
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/nextbutton"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline115"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+        app:layout_constraintTop_toTopOf="@id/guideline114">
+
+    </View>
+
+    <TextView
+        android:id="@+id/savediaper"
+        android:elevation="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/guideline115"
+        app:layout_constraintEnd_toEndOf="@id/guideline50"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+        app:layout_constraintTop_toTopOf="@id/guideline114">
+
+    </TextView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86756456" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9292929" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
