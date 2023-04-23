@@ -1,10 +1,8 @@
 # The tools I have used to gain the Android Clean Architecture are:
 
 - MMVM
-- Retrofit
 - Room
 - Live Data & Flow
-- Dagger2 & Hilt
 - Data Layer 
 
   ## Some screenshots from the application":
